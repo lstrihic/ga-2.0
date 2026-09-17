@@ -6,6 +6,11 @@ resource "layout" "single_panel" {
       title  = "Terminal"
       target = resource.terminal.shell
     }
+
+    tab "shop" {
+      title  = "The Reef Shop"
+      target = resource.service.shop
+    }
   }
 
   column {
