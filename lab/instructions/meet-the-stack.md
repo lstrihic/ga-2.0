@@ -6,7 +6,7 @@ You just joined the SRE rotation for **The Reef Shop**. Before any incident hits
 
 This is what your customers see. Open the storefront and place an order — it exercises the full request path: frontend → orders → payments.
 
-[button label="The Reef Shop" variant="outline"](tab-1)
+<instruqt-switch-tab-button id="shop" variant="outline">The Reef Shop</instruqt-switch-tab-button>
 
 Pick a coral and click **Buy now**. A small confirmation message pops up in the top-right corner, the order lands in the **Recent orders** feed, and the status bar along the bottom shows all three services green — the whole chain is healthy.
 
