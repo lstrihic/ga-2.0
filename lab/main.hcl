@@ -9,6 +9,12 @@ resource "lab" "main" {
 EOF
 
   settings {
+    theme = "modern-dark"
+
+    controls {
+      show_stop = true
+    }
+
     timelimit {
       duration   = "1h"
       show_timer = true
