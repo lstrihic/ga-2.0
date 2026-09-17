@@ -12,3 +12,22 @@ resource "aws_account" "bedrock" {
     ]
   }
 }
+
+resource "vm" "k8s" {
+  config {
+    arch = "x86_64"
+  }
+
+  image {
+    name = "ubuntu:24.04"
+  }
+
+  resources {
+    cpu    = 4
+    memory = 16384
+  }
+
+  network {
+    id = resource.network.main.meta.id
+  }
+}
