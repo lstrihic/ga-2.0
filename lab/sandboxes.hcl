@@ -36,6 +36,16 @@ resource "vm" "k8s" {
     size        = 20
   }
 
+  disk {
+    destination = "/root/.cache"
+    size        = 5
+  }
+
+  disk {
+    destination = "/root/.local"
+    size        = 5
+  }
+
   environment = {
     INSTRUQT_AWS_ACCOUNT_BEDROCK_AWS_ACCESS_KEY_ID     = resource.aws_account.bedrock.user.0.access_key_id
     INSTRUQT_AWS_ACCOUNT_BEDROCK_AWS_SECRET_ACCESS_KEY = resource.aws_account.bedrock.user.0.secret_access_key
