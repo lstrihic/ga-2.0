@@ -10,12 +10,13 @@ EOF
 
   settings {
     timelimit {
-      duration = "1h"
+      duration   = "1h"
+      show_timer = true
     }
 
     idle {
       enabled = true
-      timeout = "15m"
+      timeout = "10m"
     }
   }
 
