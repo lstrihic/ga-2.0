@@ -6,7 +6,7 @@ You just joined the SRE rotation for **The Reef Shop**. Before any incident hits
 
 This is what your customers see. Open the storefront and place an order — it exercises the full request path: frontend → orders → payments.
 
-<instruqt-switch-tab-button id="shop" variant="outline">The Reef Shop</instruqt-switch-tab-button>
+<instruqt-button to="tab:shop" variant="outline">The Reef Shop</instruqt-button>
 
 Pick a coral and click **Buy now**. A small confirmation message pops up in the top-right corner, the order lands in the **Recent orders** feed, and the status bar along the bottom shows all three services green — the whole chain is healthy.
 
@@ -16,7 +16,7 @@ Pick a coral and click **Buy now**. A small confirmation message pops up in the 
 
 Now the operator view. Head to the terminal and ask Kubernetes what's running.
 
-[button label="Terminal" variant="outline"](tab-0)
+<instruqt-button to="tab:terminal" variant="outline">Terminal</instruqt-button>
 
 ```bash,run
 kubectl get pods -o wide
@@ -30,7 +30,7 @@ Three shop services plus Prometheus, all `Running`. This is tool number one: `ku
 
 Prometheus scrapes every service and evaluates alert rules. Open its Alerts page.
 
-[button label="Prometheus" variant="outline"](tab-2)
+<instruqt-button to="tab:prometheus" variant="outline">Prometheus</instruqt-button>
 
 Both rules — `PaymentsHighErrorRate` and `ShopTargetDown` — should be green (inactive). This is tool number two: PromQL and the Prometheus UI.
 
@@ -40,7 +40,7 @@ Both rules — `PaymentsHighErrorRate` and `ShopTargetDown` — should be green 
 
 Logs and tickets don't live in either of those tools. Back in the terminal, look at the files directly.
 
-[button label="Terminal" variant="outline"](tab-0)
+<instruqt-button to="tab:terminal" variant="outline">Terminal</instruqt-button>
 
 ```bash,run
 ls -lh /root/data/
