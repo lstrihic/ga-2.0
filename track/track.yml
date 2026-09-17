@@ -1,0 +1,43 @@
+slug: coral-ai-sre
+id: hykqnrps8rn5
+title: 'AI SRE: Root-Cause an Incident with One SQL Query'
+teaser: Connect Coral to a live Kubernetes stack, wire it into Claude Code over MCP,
+  and root-cause a production incident with a single cross-source SQL JOIN.
+description: |-
+  <b style="color:#ff8d62;">Coral</b> is the data engine for enterprise AI — one SQL connection that lets agents query APIs, databases, and files as if they were a single dataset.
+
+  In this hands-on lab you step into the on-call seat. A three-service shop runs in Kubernetes with Prometheus watching it, logs streaming to disk, and a support-ticket export sitting in a Parquet file. When a bad deploy takes payments down, you will root-cause it the Coral way: one SQL JOIN across alerts, pod state, and error logs — first by hand, then hands-free through Claude Code over MCP.
+
+  You will finish by proving the governance story: Coral is read-only by design, and extending the catalog to your own API takes fifteen lines of YAML.
+icon: ./assets/icon.png
+level: intermediate
+tags:
+- mcp
+- coral
+- demo
+- ai-sre
+- sql
+owner: jparton-challenge
+developers:
+- jason@instruqt.com
+show_timer: true
+skipping_enabled: true
+idle_timeout: 600
+timelimit: 3600
+lab_config:
+  sidebar_enabled: true
+  feedback_recap_enabled: true
+  feedback_tab_enabled: false
+  loadingMessages:
+  - Connecting your sources...
+  - Warming the catalog...
+  - One SQL connection coming up...
+  - Deploying the shop to Kubernetes...
+  - Teaching your agent to JOIN...
+  theme:
+    name: modern-dark
+  hideStopButton: false
+  default_layout: AssignmentRight
+  default_layout_sidebar_size: 35
+checksum: "14281853099284368088"
+enhanced_loading: false
