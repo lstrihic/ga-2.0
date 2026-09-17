@@ -60,3 +60,6 @@ Two files: JSON log lines harvested from the pods every 30 seconds, and a suppor
 ---
 
 ✅ You know the terrain. Click **Check**, then move on to **Challenge 2** to give this stack one SQL connection.
+
+
+<instruqt-task id="check_stack"></instruqt-task>
