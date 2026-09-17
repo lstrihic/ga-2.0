@@ -8,6 +8,8 @@ resource "lab" "main" {
   You will finish by proving the governance story: Coral is read-only by design, and extending the catalog to your own API takes fifteen lines of YAML.
 EOF
 
+  icon = "assets/icon.png"
+
   settings {
     theme = "modern-dark"
 
