@@ -29,4 +29,15 @@ EOF
   }
 
   layout = resource.layout.single_panel
+
+  content {
+    chapter "coral-ai-sre" {
+      title = "AI SRE with Coral"
+
+      page "meet-the-stack" {
+        reference = resource.page.meet_the_stack
+        layout    = resource.layout.single_panel
+      }
+    }
+  }
 }
