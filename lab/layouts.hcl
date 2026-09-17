@@ -11,6 +11,11 @@ resource "layout" "single_panel" {
       title  = "The Reef Shop"
       target = resource.service.shop
     }
+
+    tab "prometheus" {
+      title  = "Prometheus"
+      target = resource.service.prometheus
+    }
   }
 
   column {
