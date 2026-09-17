@@ -11,3 +11,10 @@ resource "service" "shop" {
   scheme = "http"
   path   = "/"
 }
+
+resource "service" "prometheus" {
+  target = resource.vm.k8s
+  port   = 30990
+  scheme = "http"
+  path   = "/alerts"
+}
